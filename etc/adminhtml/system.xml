@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Auto Import</label>
+            <tab>setting</tab>
+            <resource>Randy_AutoImport::autoimport_config</resource>
+            <group id="import_setting" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Setting</label>
+                <field id="import_mode" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Module Mode</label>
+                    <source_model>Randy\AutoImport\Model\Config\Source\Mode</source_model>
+                </field>
+                <field id="import_path" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Import file location</label>
+                    <comment>the path from Magento root, e.g /var/import/</comment>
+                </field>
+                <field id="import_file" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Import file name</label>
+                    <comment>name of file including extension (currently only support csv), e.g import.csv</comment>
+                </field>
+            </group>
+        </section>
+        <section id="catalog" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Auto Import</label>
+            <tab>attribute</tab>
+            <resource>Randy_AutoImport::autoimport_attribute</resource>
+            <field id="import_att1" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Module Mode</label>
+                <source_model>Randy\AutoImport\Model\Config\Source\Attribute</source_model>
+            </field>
+        </section>
+    </system>
+</config>

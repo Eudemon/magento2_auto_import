@@ -1,7 +1,5 @@
 <h2>#About:</h2>
 
-Author: Randy (HaoRan) Yu - eudemonrandy@hotmail.com
-
 This is open source Magento 2.x module, feel free to contribute: https://github.com/Eudemon/magento2_auto_import
 
 auto create or update catalog product using cron job based on user configuration <br />
